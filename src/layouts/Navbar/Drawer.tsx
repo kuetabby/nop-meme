@@ -28,7 +28,7 @@ import { useIsMounted } from "@/hooks/useIsMounted";
 import { getHash } from "@/utils/hash";
 import useHash from "@/hooks/useHashname";
 
-import { eras } from "@/utils/font";
+import { bubble } from "@/utils/font";
 
 // import AppTitle from "@/assets/title-app.png";
 import { socialsLink } from "@/constants/links";
@@ -89,13 +89,13 @@ export const NavbarDrawer: React.FC<Props> = ({ isOpen, onClose }) => {
           className="mt-2 font-extrabold text-red-500"
           style={{ fontSize: 20 }}
         />
-        <DrawerHeader className={`bg-xiasi h-24 ${eras.className}`}>
+        <DrawerHeader className={`bg-xiasi h-24 ${bubble.className}`}>
           <Link href="/" className={`logo-container text-white h-full`}>
             <div className="font-extrabold text-2xl">XIASI</div>
           </Link>
         </DrawerHeader>
 
-        <DrawerBody className={`bg-xiasi ${eras.className}`}>
+        <DrawerBody className={`bg-xiasi ${bubble.className}`}>
           <List spacing={3}>
             {tabsList.map((item) => {
               const isActive = !!defaultHash
@@ -140,7 +140,7 @@ export const NavbarDrawer: React.FC<Props> = ({ isOpen, onClose }) => {
         </DrawerBody>
 
         <DrawerFooter
-          className={`bg-xiasi flex flex-wrap justify-center ${eras.className}`}
+          className={`bg-xiasi flex flex-wrap justify-center ${bubble.className}`}
         >
           <Link
             href={socialsLink.telegram}

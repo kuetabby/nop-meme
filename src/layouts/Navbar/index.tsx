@@ -11,12 +11,12 @@ import { NavbarDrawer } from "./Drawer";
 
 import { useIsMounted } from "@/hooks/useIsMounted";
 
-import { eras } from "@/utils/font";
+import { bubble } from "@/utils/font";
+import { socialsLink } from "@/constants/links";
 
 import XiasiLogo from "@/assets/xiasi-logo.png";
 
 import "./style.css";
-import { findUsLink, socialsLink } from "@/constants/links";
 
 interface Props {}
 
@@ -62,7 +62,7 @@ const Navbar: React.FC<Props> = () => {
   };
 
   return (
-    <div className={clsx("navbar-container", eras.className)}>
+    <div className={clsx("navbar-container", bubble.className)}>
       <div className={clsx(isScroll ? "navbar-scroll" : "navbar")}>
         <div className="w-auto sm:w-1/3 flex items-center relative">
           <Link href="/" className={`logo-container text-white`}>

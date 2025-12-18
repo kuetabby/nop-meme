@@ -8,8 +8,7 @@ import { CopyrightOutlined } from "@ant-design/icons";
 
 import { useIsMounted } from "@/hooks/useIsMounted";
 
-import { socialsLink } from "@/constants/links";
-import { eras } from "@/utils/font";
+import { bubble } from "@/utils/font";
 
 // import AppLogo from "@/assets/logo-app.png";
 // import AppBannerNav from "@/assets/banner-nav.png";
@@ -34,7 +33,7 @@ const AppFooter: React.FC<Props> = () => {
   }
 
   return (
-    <footer className={clsx("app-footer", eras.className)}>
+    <footer className={clsx("app-footer", bubble.className)}>
       <div className="app-footer-container">
         <div className="app-footer-wrapper z-30">
           {/* <div className="text-3xl text-center mb-6 z-50 relative">

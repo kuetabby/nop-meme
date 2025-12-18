@@ -34,6 +34,13 @@ export const zcool = ZCOOL_QingKe_HuangYou({
   preload: true,
 });
 
+export const bubble = localFont({
+  src: "../fonts/Game-Bubble.ttf",
+  weight: "400",
+  display: "swap",
+  preload: true,
+});
+
 export const misaki = localFont({
   src: "../fonts/Misaki-Regular.ttf",
   weight: "400",

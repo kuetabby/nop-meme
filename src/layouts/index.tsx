@@ -8,7 +8,7 @@ import Footer from "./Footer";
 
 import Provider from "@/library/Provider";
 
-import { eras } from "@/utils/font";
+import { bubble } from "@/utils/font";
 // import AppBackground from "@/assets/app-bg.png";
 
 import "./style.css";
@@ -19,7 +19,7 @@ const BaseLayout: React.FC<Props> = ({ children }) => {
   return (
     <Provider>
       {/* <Navbar /> */}
-      <main className={clsx("base-main-container", eras.className)}>
+      <main className={clsx("base-main-container", bubble.className)}>
         {/* <Image
           src={AppBackground}
           alt="roadmap"
