@@ -1,8 +1,8 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@chakra-ui/react";
+// import Link from "next/link";
+// import { Button } from "@chakra-ui/react";
 // import { Button, ListItem, UnorderedList } from "@chakra-ui/react";
 // import { ArrowRightOutlined } from "@ant-design/icons";
 
@@ -17,15 +17,15 @@ import { useIsMounted } from "@/hooks/useIsMounted";
 
 // import { FeatureArrow } from "@/utils/Icon/arrow";
 
-import BannerApp from "@/assets/xiasi-banner.png";
-import HeroApp from "@/assets/xiasi-logo.png";
+import BannerApp from "@/assets/nop-banner.png";
+// import HeroApp from "@/assets/xiasi-logo.png";
 
 // import HeroApp from "@/assets/hero-app.png";
 // import MapApp from "@/assets/map-app.png";
-import DextoolsLogo from "@/assets/logo-dextools.png";
+// import DextoolsLogo from "@/assets/logo-dextools.png";
 // import EtherscanLogo from "@/assets/logo-etherscan.png";
-import TwitterLogo from "@/assets/logo-twitter.png";
-import TelegramLogo from "@/assets/logo-telegram.png";
+// import TwitterLogo from "@/assets/logo-twitter.png";
+// import TelegramLogo from "@/assets/logo-telegram.png";
 // import Dexscreener from "@/assets/dexscreener.png";
 // import Uniswap from "@/assets/uniswap.png";
 // import Solidproof from "@/assets/solidproof.png";
@@ -33,8 +33,8 @@ import TelegramLogo from "@/assets/logo-telegram.png";
 
 import "./style.css";
 import { contractAddress, findUsLink, socialsLink } from "@/constants/links";
-import { TelegramIcon } from "@/utils/Icon/Telegram";
-import { TwitterIcon } from "@/utils/Icon/Twitter";
+// import { TelegramIcon } from "@/utils/Icon/Telegram";
+// import { TwitterIcon } from "@/utils/Icon/Twitter";
 
 interface Props {}
 
@@ -107,9 +107,11 @@ const Home: React.FC<Props> = () => {
       <div id="welcome" className="h-4 sm:h-8 relative z-30" />
       <div ref={welcomeRef} className="homepage-body px-4">
         <Image
-          src={HeroApp}
-          alt="xiasi-hero"
-          className="w-full h-full object-contain"
+          src="/hero.svg"
+          alt="nop-hero"
+          className="w-full h-auto object-contain rounded-full"
+          width={100}
+          height={100}
         />
       </div>
 
@@ -117,24 +119,23 @@ const Home: React.FC<Props> = () => {
       <div ref={aboutRef} className="w-full h-full relative">
         <div className="text-5xl text-center mb-6">{contractAddress}</div>
 
-        <div className="text-6xl font-bold text-center text-pelu-red">
+        {/* <div className="text-6xl font-bold text-center text-pelu-red">
           XIASI
-        </div>
+        </div> */}
 
-        <div className="w-full lg:w-1/2 mx-auto flex flex-wrap justify-center text-4xl text-center mt-20 mb-10">
-          <span className="text-pelu-red font-bold">$XIASI</span> Born from the
-          ancient folklore of China, the Xiasi Dog is more than just a symbol of
-          good fortune. It's a guardian of the household, a hunter of legends,
-          and now, the new star in the meme universe.
+        <div className="w-full lg:w-1/2 mx-auto flex flex-wrap justify-center text-xl md:text-4xl text-center mt-20 mb-10">
+          <span className="text-pelu-red font-bold">$NOP</span> doesn’t talk
+          much. Because most questions have the same answer.
         </div>
 
         <div className="w-full flex flex-wrap justify-center px-2 lg:px-0">
           <div className="w-full lg:w-1/2">
-            <div className="w-full text-3xl mt-4 lg:mt-0 text-center">
-              The timeless loyalty and protection of the{" "}
-              <span className="text-pelu-red font-bold">XIASI</span> Dog,
-              celebrated for centuries as a faithful companion and a bringer of
-              prosperity
+            <div className="w-full text-xl md:text-3xl mt-4 lg:mt-0 text-center">
+              No. Not now. Not later. Not ignorance. Not fear.
+            </div>
+            <div className="w-full text-xl md:text-3xl mt-2 text-center">
+              Just refusal. When everyone screams “moon,” Nop stays silent.
+              “No.”
             </div>
           </div>
         </div>
@@ -145,7 +146,7 @@ const Home: React.FC<Props> = () => {
           alt="pelu-banner"
           className="w-full h-[100vw] sm:h-[75vw] lg:h-[50vw] xl:h-full"
         />
-        <div className="h-10 sm:h-14 relative z-30" />
+        {/* <div className="h-10 sm:h-14 relative z-30" />
 
         <div className="w-full lg:w-1/2 m-auto text-center text-3xl px-2">
           <div className="w-full text-4xl font-bold mb-4">
@@ -153,8 +154,8 @@ const Home: React.FC<Props> = () => {
             and be part of a community that treasures both the past and the
             playful present.
           </div>
-        </div>
-        <br />
+        </div> */}
+        {/* <br />
         <div className="w-full flex flex-wrap justify-center items-center text-white m-auto gap-4">
           <Link
             href={findUsLink.dextools}
@@ -188,10 +189,10 @@ const Home: React.FC<Props> = () => {
           >
             <Image src={TwitterLogo} alt="twitter" className="w-full h-full" />
           </Link>
-        </div>
+        </div> */}
       </div>
 
-      <div id="tokenomics" className="h-24 sm:h-36 relative z-30" />
+      {/* <div id="tokenomics" className="h-24 sm:h-36 relative z-30" />
       <div ref={tokensRef} className="homepage-body">
         <div className="text-6xl font-bold text-center text-xiasi-yellow">
           TOKENOMICS
@@ -208,8 +209,8 @@ const Home: React.FC<Props> = () => {
             <div className={`app-title text-5xl mb-2`}>LP BURNED </div>
           </div>
         </div>
-      </div>
-      <div className="h-24 sm:h-36" />
+      </div> */}
+      {/* <div className="h-24 sm:h-36" /> */}
     </div>
   );
 };

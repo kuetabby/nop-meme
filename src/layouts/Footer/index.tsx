@@ -76,18 +76,18 @@ const AppFooter: React.FC<Props> = () => {
           <div className="h-6 sm:h-12" />
 
           <div className="w-full flex flex-wrap justify-between items-center px-2 py-2 md:py-4 text-white z-30">
-            <div className="w-full text-base text-center z-50 relative">
+            {/* <div className="w-full text-base text-center z-50 relative">
               <Link
                 href={socialsLink.email}
                 className="w-auto text-white hover:!text-pelu-red mb-2"
               >
                 dev@xiasithedog.fun
               </Link>
-            </div>
+            </div> */}
 
             <div className="w-full text-base text-center font-semibold">
               <CopyrightOutlined className="mx-1" style={{ fontSize: "1em" }} />
-              Copyright 2024 | All Rights Reserved
+              NOP 2025 | All Rights Reserved
             </div>
           </div>
         </div>

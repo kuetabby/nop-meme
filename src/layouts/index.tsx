@@ -3,7 +3,7 @@ import React, { PropsWithChildren } from "react";
 // import Image from "next/image";
 import clsx from "clsx";
 
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 import Provider from "@/library/Provider";
@@ -18,7 +18,7 @@ interface Props extends PropsWithChildren {}
 const BaseLayout: React.FC<Props> = ({ children }) => {
   return (
     <Provider>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className={clsx("base-main-container", eras.className)}>
         {/* <Image
           src={AppBackground}
